@@ -101,7 +101,7 @@ input[type="submit"] {
 }
 
 input[type="radio"]{
-    margin: 1rem;
+    margin: 1rem 0.3rem;
     width: 1rem;
 }
 
@@ -138,7 +138,7 @@ select {
 }
 
 /* responsive */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     body {
         font-size: 1rem;
         line-height: 1.45;

@@ -32,7 +32,7 @@
         <form id="aanmelden coachdag" name="aanmelden coachdag" method="POST" action="/succes.html" data-netlify="true"
             data-netlify-recaptcha="true">
             <!-- naw -->
-            <div class="row">
+            <div class="row ca-space-between">
                 <div class="field" data-col="4">
                     <label for="voornaam">Voornaam</label>
                     <input type="text" name="voornaam" required>
@@ -47,16 +47,16 @@
                 </div>
             </div>
             <!-- email tel en regio -->
-            <div class="row">
+            <div class="row ca-space-between">
                 <div class="field" data-col="3">
                     <label for="email">Email</label>
                     <input type="email" name="email" required>
                 </div>
-                <div class="field" data-col="2">
+                <div class="field" data-col="3">
                     <label for="telefoon nummer">Telefoon nummer</label>
                     <input type="text" name="telefoon nummer" required>
                 </div>
-                <div class="field" data-col="2">
+                <div class="field" data-col="3">
                     <label for="regio">Regio</label>
                     <select id="regio" name="regio" required>
                         <option value="">Kies een regio</option>
@@ -76,8 +76,8 @@
                 </div>
             </div>
             <!--LL sport info -->
-            <div class="row">
-                <div class="field" data-col="2">
+            <div class="row ca-space-between">
+                <div class="field" data-col="3">
                     Functie:
                     <div class="row" data-grid="va-center">
                         <input type="radio" name="functie" value="coach" required>
@@ -86,7 +86,7 @@
                         <label for="umpire">Umpire</label>
                     </div>
                 </div>
-                <div class="field" data-col="2">
+                <div class="field" data-col="3">
                     Type sport:
                     <div class="row" data-grid="va-center">
                         <input type="radio" name="sport" value="honkbal" required>
