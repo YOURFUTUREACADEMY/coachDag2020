@@ -133,8 +133,9 @@ select {
 .row {
     margin-bottom: 3%;
 }
-
-
+.submitrow{
+    justify-content: flex-end;
+}
 
 /* responsive */
 @media (max-width: 700px) {
@@ -158,4 +159,9 @@ select {
     select {
         width: 100%;
     }
+
+    .submitrow{
+        justify-content: space-evenly;
+    }
+
 }
