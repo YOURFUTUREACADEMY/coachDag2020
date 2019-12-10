@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://npmcdn.com/wire.css/dist/wire.min.css" type="text/css">
+    <link rel="stylesheet" href="_css/style.css" type="text/css">
+    <title>Aanmeld formulier voor de Coachdag Little League</title>
+</head>
+
+<body>
+    <header>
+        <img src="_images/Webbanner.png" alt="Little League banner" class="banner">
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Aanmeld formulier voor de Coachdag Little League</h1>
+            <p>Sinds 2018 organiseren we de Respect the Game dagen voor onze Little League coaches en umpires. De
+                coaches van de Little League teams die het NK spelen moeten 1 van deze dagen 1x in de 2 jaar
+                verplicht bijwonen om het Little League team tijdens het NK te mogen coachen. Er wordt een
+                aantekening gemaakt in Sportlink als de dag bijgewoond is.</p>
+            <p>Het doel van deze dagen is om de coaches en umpires meer inzicht in te geven en bewustheid te
+                creëren op het gebied van Sportiviteit en Respect op en rondom het veld. </p>
+            <p>De deelnemers krijgen een interessant programma voorgeschoteld en gaan in gesprek met elkaar over
+                dit belangrijke onderwerp, zodat we samen blijven zorgen voor een veilig sportklimaat en veel
+                sportplezier.</p>
+            <p>In 2020 organiseren we de Respect the Game dagen op zaterdag 1 februari en zaterdag  29 februari.
+                Men mag dus een keuze maken voor 1 van deze 2 data.</p>
+        </section>
+
+        <form id="aanmelden coachdag" name="aanmelden coachdag" method="POST" action="/succes.html" data-netlify="true"
+            data-netlify-recaptcha="true">
+            <!-- naw -->
+            <div class="row">
+                <div class="field" data-col="4">
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" name="voornaam" required>
+                </div>
+                <div class="field" data-col="2">
+                    <label for="tussenvoegsel">tussenvoegsel</label>
+                    <input type="text" name="tussenvoegsel">
+                </div>
+                <div class="field" data-col="4">
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" name="achternaam" required>
+                </div>
+            </div>
+            <!-- email tel en regio -->
+            <div class="row">
+                <div class="field" data-col="3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="field" data-col="2">
+                    <label for="telefoon nummer">Telefoon nummer</label>
+                    <input type="text" name="telefoon nummer" required>
+                </div>
+                <div class="field" data-col="2">
+                    <label for="regio" >Regio</label>
+                    <select id="regio" name="regio" required>
+                        <option value="">Kies een regio</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Brabant / Zeeland">Brabant / Zeeland</option>
+                        <option value="Den Haag">Den Haag</option>
+                        <option value="Haarlem">Haarlem</option>
+                        <option value="Midden">Midden</option>
+                        <option value="Noord">Noord</option>
+                        <option value="Noord Holland">Noord Holland</option>
+                        <option value="Oost">Oost</option>
+                        <option value="Rotterdam">Rotterdam</option>
+                        <option value="Zuid">Zuid</option>
+                    </select>
+                    <a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=a8a694eaf7f8452194efaf0281cbf228&extent=0.2275,50.606,11.917,53.9901"
+                        target="_blank">Wat is mijn regio?</a>
+                </div>
+            </div>
+            <!--LL sport info -->
+            <div class="row">
+                <div class="field" data-col="2">
+                    Functie:
+                    <div class="row" data-grid="va-center">
+                        <input type="radio" name="functie" value="coach" required>
+                        <label for="coach">Coach</label>
+                        <input type="radio" name="functie" value="umpire" required>
+                        <label for="umpire">Umpire</label>
+                    </div>
+                </div>
+                <div class="field" data-col="2">
+                    Type sport:
+                    <div class="row" data-grid="va-center">
+                        <input type="radio" name="sport" value="honkbal" required>
+                        <label for="honkbal">Honkbal</label>
+                        <input type="radio" name="sport" value="softbal" required>
+                        <label for="softbal">Softbal</label>
+                    </div>
+                </div>
+                <div class="field" data-col="3">
+                    <label for="ervaring">Jaren Little League ervaring</label>
+                    <input id="ervaring" type="number" name="ervaring" required>
+                </div>
+            </div>
+            <!-- datumkeuze -->
+            <div class="row">
+
+          <div class="field">
+                <label for="datumkeuze" >Ik kom graag naar de coachdag op:</label>
+                <select name="datum" id="datumkeuze" required>
+                <option value="00"></option>
+                <option value="01-02">zaterdag 1 februari</option>
+                <option value="29-02">zaterdag 29 februari</option>
+            </select>
+          </div>
+
+      </select>
+            </div>
+
+            <!-- avg toestemming -->
+            <div class="row" data-grid="va-center">
+                <input type="checkbox" name="avg" id="avg" value="toestemming">
+                <label for="avg">Hierbij geef ik toestemmming dat:</label>
+                <ul>
+                    <li>
+                        de door mij ingevulde gegevens gebruikt kunnen worden ten behoeve van communicatie
+                        doeleinden voor deelname aan het NK Little League programma.
+                    </li>
+                    <li>
+                        foto en filmmateriaal die gemaakt worden, tijdens gerelateerde NK Little League evenmenten,
+                        gebruikt kan worden voor communicatie doeleinden ten behoeve van het NK Little League
+                        programma.
+                    </li>
+                </ul>
+            </div>
+            <!-- captcha en submit -->
+            <div class="row">
+                <div data-netlify-recaptcha="true"></div>
+                <input type="submit" value="Versturen">
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+/*
+font-family: 'Varela Round', sans-serif;
+
+ #0D47A1    -   blauw bovenkant border
+ red        -   rood onderkant border (waarschuwing)
+ green      -   groen onderkant border (succes)
+*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+/* globaal */
+body {
+   background-color:#E5E5E5;
+   font-family: 'Varela Round', sans-serif;
+   font-size: 1.6rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    padding: 3% 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+    text-decoration: underline #0D47A1;
+}
+
+h3 {
+    font-size: 2.4;
+}
+
+.banner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+section, form, footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 2%;
+    border-top: #0D47A1;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    background-color: #FFFFFF;
+    border-top: 4px solid #0D47A1;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+
+
+/* formulier */
+select:required,
+input:required,
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    border: none;
+    border-bottom: 0.2px inset red;
+}
+
+input:valid, select:valid {
+    border: none;
+    border-bottom: 0.2px solid green;
+}
+
+input[type="text"]:optional{
+    border: none;
+    border-bottom: 0.2px solid black;
+}
+
+input[type=radio]:valid:not(:checked)+label {
+    border: initial;
+}
+
+input[type="submit"] {
+    background-color: #48a8ce;
+    border: 0;
+    border-radius: 3px;
+    color:
+    #fff;
+    display: inline-block;
+    line-height: inherit;
+    padding: .7em 1.4em;
+    text-align: center;
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    vertical-align: bottom;
+}
+
+input[type="radio"]{
+    margin: 1rem;
+    width: 1rem;
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label{
+    border-bottom: inset 0.2px green;
+}
+#ervaring {
+    width: 4rem;
+    margin: 0.3rem;
+}
+#avg{
+    margin: 1rem;
+}
+
+select {
+    padding:  2px 0;
+    border: initial;
+    border-bottom: solid 0.2px #0D47A1;
+    width: 80%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.row {
+    margin-bottom: 3%;
+}
+
+
+
+/* responsive */
+@media (max-width: 700px) {
+    body {
+        font-size: 1rem;
+        line-height: 1.45;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    select {
+        width: 100%;
+    }
+}
