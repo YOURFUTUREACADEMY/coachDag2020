@@ -16,7 +16,7 @@ body {
 
 main {
     margin: 0 auto;
-    width: 90%;
+    width: 97%;
     padding: 3% 0;
 }
 
@@ -139,6 +139,9 @@ select {
 
 /* responsive */
 @media (max-width: 768px) {
+    main{
+        width: 90%;
+    }
     body {
         font-size: 1rem;
         line-height: 1.45;
