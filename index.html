@@ -57,7 +57,7 @@
                     <input type="text" name="telefoon nummer" required>
                 </div>
                 <div class="field" data-col="2">
-                    <label for="regio" >Regio</label>
+                    <label for="regio">Regio</label>
                     <select id="regio" name="regio" required>
                         <option value="">Kies een regio</option>
                         <option value="Amsterdam">Amsterdam</option>
@@ -102,21 +102,19 @@
             </div>
             <!-- datumkeuze -->
             <div class="row">
+                <div class="field">
+                    <label for="datumkeuze">Ik kom graag naar de coachdag op:</label>
+                    <select name="datum" id="datumkeuze" required>
+                        <option value="00"></option>
+                        <option value="01-02">zaterdag 1 februari</option>
+                        <option value="29-02">zaterdag 29 februari</option>
+                    </select>
+                </div>
 
-          <div class="field">
-                <label for="datumkeuze" >Ik kom graag naar de coachdag op:</label>
-                <select name="datum" id="datumkeuze" required>
-                <option value="00"></option>
-                <option value="01-02">zaterdag 1 februari</option>
-                <option value="29-02">zaterdag 29 februari</option>
-            </select>
-          </div>
-
-      </select>
             </div>
 
             <!-- avg toestemming -->
-            <div class="row" data-grid="va-center">
+            <div class="row" data-grid="va-center ">
                 <input type="checkbox" name="avg" id="avg" value="toestemming">
                 <label for="avg">Hierbij geef ik toestemmming dat:</label>
                 <ul>
@@ -132,7 +130,7 @@
                 </ul>
             </div>
             <!-- captcha en submit -->
-            <div class="row">
+            <div class="row" data-grid="right">
                 <div data-netlify-recaptcha="true"></div>
                 <input type="submit" value="Versturen">
             </div>
