@@ -17,7 +17,7 @@ body {
 main {
     margin: 0 auto;
     width: 90%;
-    padding: 3% 0;
+
 }
 
 a {
@@ -39,7 +39,6 @@ h3 {
 
 .banner {
     display: block;
-    margin: 0 auto;
     width: 100%;
 }
 section, form, footer {
@@ -136,7 +135,34 @@ select {
 .submitrow{
     justify-content: flex-end;
 }
+.logoNK {
+    height: 150px;
+}
 
+.rotate {
+    animation: rotation 3.5s infinite linear
+}
+
+#logNK {
+    padding: 2%;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+#bedankt {
+    display: none;
+    margin-top:0;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
 /* responsive */
 @media (max-width: 768px) {
     main{

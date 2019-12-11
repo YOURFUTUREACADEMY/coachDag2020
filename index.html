@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://npmcdn.com/wire.css/dist/wire.min.css" type="text/css">
     <link rel="stylesheet" href="_css/style.css" type="text/css">
-    <title>Aanmeld formulier voor de Coachdag Little League</title>
+    <title>Aanmeldformulier voor de Little League Respect the Game dag</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,11 +17,16 @@
 
 <body>
     <header>
-        <img src="_images/Webbanner.png" alt="Little League banner" class="banner">
+        <img class="banner" src="./_images/Webbanner.png" alt="NK Little League 2020 logo">
+        <div class="ta-center">
+            <h1>Inschrijfformulier</h1>
+            <h1> Little League Respect the Game dag 2020</h1>
+
+        </div>
     </header>
     <main>
-        <section id="intro">
-            <h1>Aanmeld formulier voor de Coachdag Little League</h1>
+        <section id="intro" class="ta-center">
+            <h1>Respect the Game </h1>
             <p>Sinds 2018 organiseren we de Respect the Game dagen voor onze Little League coaches en umpires. De
                 coaches van de Little League teams die het NK spelen moeten 1 van deze dagen 1x in de 2 jaar
                 verplicht bijwonen om het Little League team tijdens het NK te mogen coachen. Er wordt een
@@ -31,8 +36,6 @@
             <p>De deelnemers krijgen een interessant programma voorgeschoteld en gaan in gesprek met elkaar over
                 dit belangrijke onderwerp, zodat we samen blijven zorgen voor een veilig sportklimaat en veel
                 sportplezier.</p>
-            <p>In 2020 organiseren we de Respect the Game dagen op zaterdag 1 februari en zaterdag  29 februari.
-                Men mag dus een keuze maken voor 1 van deze 2 data.</p>
         </section>
 
         <form id="aanmelden coachdag" name="aanmelden coachdag" method="POST" action="/succes.html" data-netlify="true"
@@ -112,8 +115,8 @@
                     <label for="datumkeuze">Ik kom graag naar de coachdag op:</label>
                     <select name="datum" id="datumkeuze" required>
                         <option value="00"></option>
-                        <option value="01-02">zaterdag 1 februari</option>
-                        <option value="29-02">zaterdag 29 februari</option>
+                        <option value="zaterdag 1 februari 2020">zaterdag 1 februari</option>
+                        <option value="zaterdag 29 februari">zaterdag 29 februari</option>
                     </select>
                 </div>
 
